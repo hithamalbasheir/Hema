@@ -8,6 +8,6 @@ import retrofit2.http.Query
 import java.util.*
 
 interface NewsRetrofitService {
-    @GET("/v2/everything")
-    fun getNews(@Query("q") query: String,@Query("apiKey") api_key: String) : Observable<Response>
+    @GET("/v2/top-headlines")
+    fun getNews(@Query("country") country: String, @Query("apiKey") api_key: String) : Observable<Response>
 }

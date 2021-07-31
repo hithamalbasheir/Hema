@@ -3,4 +3,6 @@
     <string name="idk">idk</string>
     <string name="title">title</string>
     <string name="news_image">news image</string>
+    <string name="description">Description</string>
+    <string name="name">name</string>
 </resources>

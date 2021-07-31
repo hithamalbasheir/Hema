@@ -1,6 +1,7 @@
 package com.example.hema.domain.model
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class News(
                 @SerializedName("source") var source : Source,
@@ -11,4 +12,4 @@ data class News(
                 @SerializedName("urlToImage") val urlToImage : String,
                 @SerializedName("publishedAt") val publishedAt : String,
                 @SerializedName("content") val content : String
-                )
+                ):Serializable

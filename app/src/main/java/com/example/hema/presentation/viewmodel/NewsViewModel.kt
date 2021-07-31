@@ -30,4 +30,7 @@ class NewsViewModel @Inject constructor(private val repository: Repository, @IoS
                         it.message.toString())
             })
     }
+    fun onDestroy(){
+        compositeDisposable.dispose()
+    }
 }

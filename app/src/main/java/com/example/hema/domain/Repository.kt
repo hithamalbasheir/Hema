@@ -8,6 +8,6 @@ import javax.inject.Inject
 
 class Repository @Inject constructor (private val newsRetrofitService: NewsRetrofitService) {
     fun getNews():Observable<Response>{
-        return newsRetrofitService.getNews("keyword","22d9c2c535dd4b0daf6a2d110e50f1d2")
+        return newsRetrofitService.getNews("ae","22d9c2c535dd4b0daf6a2d110e50f1d2")
     }
 }
