@@ -5,4 +5,5 @@
     <string name="news_image">news image</string>
     <string name="description">Description</string>
     <string name="name">name</string>
+    <string name="onBackPressed">Do you really wanna leave :(</string>
 </resources>

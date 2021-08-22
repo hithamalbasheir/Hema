@@ -10,4 +10,9 @@ import java.util.*
 interface NewsRetrofitService {
     @GET("/v2/top-headlines")
     fun getNews(@Query("country") country: String, @Query("apiKey") api_key: String) : Observable<Response>
+    @GET("/v2/top-headlines")
+    fun getNewsForCaching(@Query("country") country: String,
+                          @Query("apiKey") api_key: String,
+                          @Query("pageSize") pageSize: Int,
+                          @Query("sortBy") sortBy: String): Observable<Response>
 }
